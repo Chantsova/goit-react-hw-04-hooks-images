@@ -6,7 +6,10 @@ const ImageGalleryItem = ({
   largeImageURL,
   handleSelectImage,
 }) => (
-  <li className="ImageGalleryItem">
+  <li
+    className="ImageGalleryItem"
+    onClick={() => handleSelectImage(largeImageURL)}
+  >
     <img src={webformatURL} alt={id} className="ImageGalleryItem-image" />
   </li>
 );

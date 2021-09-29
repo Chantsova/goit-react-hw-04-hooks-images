@@ -3,7 +3,6 @@ import './Modal.css';
 
 export default function Modal({ selectedImage, handleCloseModal }) {
   useEffect(() => {
-    console.log(selectedImage);
     const handleKeyDown = event => {
       if (event.code === 'Escape') {
         handleCloseModal();
