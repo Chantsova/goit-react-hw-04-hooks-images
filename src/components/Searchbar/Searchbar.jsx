@@ -13,7 +13,7 @@ export default function Searchbar({ onSubmit }) {
     event.preventDefault();
 
     if (inputName.trim() === '') {
-      Notiflix.Notify.warning(
+      return Notiflix.Notify.warning(
         'Please, input target text in the searching field',
       );
     }

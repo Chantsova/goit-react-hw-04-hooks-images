@@ -15,8 +15,8 @@ const getImagesAPI = (name, page) => {
     })
     .then(response => {
       if (response.data.totalHits !== 0) {
-        const images = response.data.hits;
-        return images;
+        const hits = response.data.hits;
+        return hits;
       }
       return Promise.reject(
         new Error(`There are no images with name "${name}"`),
